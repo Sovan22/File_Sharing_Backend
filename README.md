@@ -72,6 +72,9 @@ To run the project using Docker and Docker Compose, follow these steps:
     - `200 OK` - Registration successful.
     - `400 Bad Request` - Invalid input or email already registered.
     - `500 Internal Server Error` - Server error.
+   
+![register](https://github.com/user-attachments/assets/122eb2b0-3a86-4cc5-8bf4-b860936e076e)
+
 
 - **Login**
   - **Endpoint:** `POST /login`
@@ -88,6 +91,9 @@ To run the project using Docker and Docker Compose, follow these steps:
     - `401 Unauthorized` - Invalid credentials.
     - `500 Internal Server Error` - Server error.
 
+![login](https://github.com/user-attachments/assets/b16546b3-d7db-4817-b29d-bea05e8c8f34)
+
+
 ### File Routes
 
 - **Upload File**
@@ -99,12 +105,16 @@ To run the project using Docker and Docker Compose, follow these steps:
     - `400 Bad Request` - Failed to get file from request.
     - `500 Internal Server Error` - Failed to save file or metadata.
 
+![upload](https://github.com/user-attachments/assets/33d569e7-8937-4a10-9612-e7a96467d466)
+
 - **Get User Files**
   - **Endpoint:** `GET /files`
   - **Description:** Retrieves a list of files uploaded by the authenticated user.
   - **Responses:**
     - `200 OK` - Returns a list of files.
     - `500 Internal Server Error` - Failed to retrieve files.
+
+![getfiles](https://github.com/user-attachments/assets/a7396db5-b315-49e2-8bfa-58a6872a5f50)
 
 - **Share File**
   - **Endpoint:** `GET /share/:fileID`
@@ -118,6 +128,8 @@ To run the project using Docker and Docker Compose, follow these steps:
     - `404 Not Found` - File not found.
     - `500 Internal Server Error` - Server error.
 
+![share](https://github.com/user-attachments/assets/8efd44f9-9187-4c43-bc31-06db09665667)
+
 - **Delete File**
   - **Endpoint:** `GET /delete/:fileID`
   - **Description:** Deletes a file by ID.
@@ -128,6 +140,8 @@ To run the project using Docker and Docker Compose, follow these steps:
     - `400 Bad Request` - Invalid file ID.
     - `404 Not Found` - File not found.
     - `500 Internal Server Error` - Failed to delete file.
+![delete](https://github.com/user-attachments/assets/94197851-1bb4-4c56-bc95-f35a93d8e2bd)
+
 
 - **Search Files**
   - **Endpoint:** `GET /search`
@@ -142,6 +156,7 @@ To run the project using Docker and Docker Compose, follow these steps:
     - `200 OK` - Returns search results.
     - `400 Bad Request` - Invalid date format.
     - `500 Internal Server Error` - Failed to search files.
+![search](https://github.com/user-attachments/assets/18b9bdb4-60da-434b-9dc1-7b6179a7acca)
 
 ## Rate Limiting
 
