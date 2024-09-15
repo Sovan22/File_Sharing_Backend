@@ -1,0 +1,22 @@
+# Go build output
+*.exe
+*.exe~
+*.dll
+*.so
+
+# Upload folder
+upload/
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.production
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+#databases
+file_sharing.db
+shared_files.db
