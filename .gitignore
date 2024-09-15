@@ -1,11 +1,34 @@
+<<<<<<< HEAD
+# Go build output
+=======
 # If you prefer the allow list template instead of the deny list, see community template:
 # https://github.com/github/gitignore/blob/main/community/Golang/Go.AllowList.gitignore
 #
 # Binaries for programs and plugins
+>>>>>>> origin/main
 *.exe
 *.exe~
 *.dll
 *.so
+<<<<<<< HEAD
+
+# Upload folder
+upload/
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.production
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+#databases
+file_sharing.db
+shared_files.db
+=======
 *.dylib
 
 # Test binary, built with `go test -c`
@@ -23,3 +46,4 @@ go.work.sum
 
 # env file
 .env
+>>>>>>> origin/main
