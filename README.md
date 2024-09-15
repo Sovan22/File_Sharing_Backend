@@ -27,7 +27,10 @@ To get started with the project, follow these steps:
     go mod tidy
     ```
 
-3. **Run the Server:**
+3. **If not using Docker**
+    Remove comment ```os.Setenv("REDIS_URL", "localhost:6379")``` in func main of main.go
+
+4. **Run the Server:**
     ```bash
     go run main.go
     ```
